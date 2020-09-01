@@ -1,0 +1,358 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Template Mo">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+
+    <title>BookIt Publishing Company</title>
+
+    <link rel="stylesheet" type="text/css" href="~/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="~/assets/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="~/assets/css/templatemo-art-factory.css">
+    <link rel="stylesheet" type="text/css" href="~/assets/css/owl-carousel.css">
+
+</head>
+
+<body>
+
+
+    <div id="preloader">
+        <div class="jumper">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+
+
+
+    <header class="header-area header-sticky">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <a href="#" class="logo">BookIt.</a>
+                        <ul class="nav">
+                            <li class="scroll-to-section"><a href="#welcome" class="active">Home</a></li>
+                            <li class="scroll-to-section"><a href="#about">About</a></li>
+                            <li class="scroll-to-section"><a href="#services">New Arrivals</a></li>
+                            <li class="scroll-to-section"><a href="#subs">Subs Benefits</a></li>
+                            <li class="scroll-to-section"><a href="#contact-us">Contact Us</a></li>
+                            <li class="submenu">
+                                <a href="javascript:;"><i class="fa fa-user"></i></a>
+                                <ul>
+                                    <li>@Html.ActionLink("Logout", "Index", "Home")</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <a class='menu-trigger'>
+                            <span>Menu</span>
+                        </a>
+
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+    <div class="welcome-area" id="welcome">
+
+
+        <div class="header-text">
+            <div class="container">
+                <div class="row">
+                    <div class="left-text col-lg-6 col-md-6 col-sm-12 col-xs-12" data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
+                        <h1>BookIt. is always available <strong>for YOU</strong></h1>
+                        <p>We are a book publishing company situated at Vadodara and we offer a wide range of services to our customers.</p>
+                        <a href="#about" class="main-button-slider">Find Out More</a>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" data-scroll-reveal="enter right move 30px over 0.6s after 0.4s">
+                        <img src="~/assets/images/slider-illustration.png" class="rounded img-fluid d-block mx-auto" alt="First Vector Graphic">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <section class="section" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 col-md-12 col-sm-12" data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
+                    <img src="~/assets/images/left-image.png" class="rounded img-fluid d-block mx-auto" alt="App">
+                </div>
+                <div class="right-text col-lg-5 col-md-12 col-sm-12 mobile-top-fix">
+                    <div class="left-heading">
+                        <h5>About Us</h5>
+                    </div>
+                    <div class="left-text">
+                        <p>We are famous for publishing books that are written by renowned Authors. We also offer wide range of services to our clients mainly being Students and Libraries. </p>
+                        <a href="#about2" class="main-button">Discover More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="hr"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section class="section" id="services">
+        <div class="container">
+            <div class="row">
+                <div class="owl-carousel owl-theme">
+                    <div class="item service-item">
+                        <i><img src="~/assets/images/book-1.jpg" alt=""></i>
+                        <p>By <strong>John Nathan Mueller</strong></p>
+                        <p>₹<strong>100</strong></p>
+                        <a>@Html.ActionLink("Purchase", "Checkout", "Accounts", null, new { @class = "main-button", })</a>
+                    </div>
+                    <div class="item service-item">
+                        <i><img src="~/assets/images/book-2.jpg" alt="" style="height: 365px;"></i>
+                        <p>By <strong>Brianna Weist</strong></p>
+                        <p>₹<strong>120</strong></p>
+                        <a>@Html.ActionLink("Purchase", "Checkout", "Accounts", null, new { @class = "main-button", })</a>
+                    </div>
+                    <div class="item service-item">
+                        <i><img src="~/assets/images/book-3.jpg" alt="" style="width: 300px;"></i>
+                        <p>By <strong>Nikita Gill</strong></p>
+                        <p>₹<strong>140</strong></p>
+                        <a>@Html.ActionLink("Purchase", "Checkout", "Accounts", null, new { @class = "main-button", })</a>
+                    </div>
+                    <div class="item service-item">
+                        <i><img src="~/assets/images/book-4.jpg" alt=""></i>
+                        <p>By <strong>Ramia Nain</strong></p>
+                        <p>₹<strong>160</strong></p>
+                        <a>@Html.ActionLink("Purchase", "Checkout", "Accounts", null, new { @class = "main-button", })</a>
+                    </div>
+                    <div class="item service-item">
+                        <i><img src="~/assets/images/book-5.jpg" alt=""></i>
+                        <p>By <strong>Alex Lemon</strong></p>
+                        <p>₹<strong>180</strong></p>
+                        <a>@Html.ActionLink("Purchase", "Checkout", "Accounts", null, new { @class = "main-button", })</a>
+                    </div>
+                    <div class="item service-item">
+                        <i><img src="~/assets/images/book-6.jpg" alt="" style="height: 365px;"></i>
+                        <p>By <strong>Rupi Kaur</strong></p>
+                        <p>₹<strong>200</strong></p>
+                        <a>@Html.ActionLink("Purchase", "Checkout", "Accounts", null, new { @class = "main-button", })</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="subs">
+        <div class="container">
+            <!-- ***** Section Title Start ***** -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-heading">
+                        <h2>For our Subscribers</h2>
+                    </div>
+                </div>
+                <div class="offset-lg-3 col-lg-6">
+                </div>
+            </div>
+            <!-- ***** Section Title End ***** -->
+
+            <div class="row">
+                <div class="left-text col-lg-6 col-md-6 col-sm-12">
+                    <h5>Suggested weekly readings of Novels and Magazines</h5>
+                    <div class="accordion-text">
+                        <p>We provide special services to our subscribers.</p>
+                        <p>We suggest some special readings to our customers which contains the magazines and the novels which are recently published and liked by everyone.</p>
+                        <span>Email: <a href="#">shahdarsh364@gmail.com</a><br></span>
+                        <a href="#contact-us" class="main-button">Contact Us</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="accordions is-first-expanded">
+                        <article class="accordion">
+                            <div class="accordion-head">
+                                <span>Wired - Magazine</span>
+                                <span class="icon">
+                                    <i class="icon fa fa-chevron-right"></i>
+                                </span>
+                            </div>
+                            <div class="accordion-body">
+                                <div class="content">
+                                    <p>
+                                        Wired is a monthly American magazine, published in print and online editions, that focuses on how emerging technologies affect culture, the economy, and politics. Owned by Condé Nast.
+                                        <br><br>
+                                        It is headquartered in San Francisco, California, and has been in publication since March/April 1993..
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="accordion">
+                            <div class="accordion-head">
+                                <span>Computer World - Magazine</span>
+                                <span class="icon">
+                                    <i class="icon fa fa-chevron-right"></i>
+                                </span>
+                            </div>
+                            <div class="accordion-body">
+                                <div class="content">
+                                    <p>
+                                        Computerworld (abbreviated as CW) is an ongoing decades old professional publication which in 2014 "went digital." Its audience is information technology (IT) and business technology professionals, and is available via a publication website and as a digital magazine.
+                                        <br><br>
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="accordion">
+                            <div class="accordion-head">
+                                <span>MacWorld - Magazine</span>
+                                <span class="icon">
+                                    <i class="icon fa fa-chevron-right"></i>
+                                </span>
+                            </div>
+                            <div class="accordion-body">
+                                <div class="content">
+                                    <p>Macworld is the largest Apple-focused publishing brand in the world, and Macworld Magazine (U.S.) is the most popular Apple-focused magazine. Launched with the Mac in 1984, Macworld is still the best place to read about everything Apple's doing, from the Mac to the iPad, iPhone, and iPadPro.</p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="accordion">
+                            <div class="accordion-head">
+                                <span>The Inevitable</span>
+                                <span class="icon">
+                                    <i class="icon fa fa-chevron-right"></i>
+                                </span>
+                            </div>
+                            <div class="accordion-body">
+                                <div class="content">
+                                    <p>
+                                        The Inevitable: Understanding the 12 Technological Forces That Will Shape Our Future
+                                        <br><br>
+                                        The Inevitable is a 2016 nonfiction book by Kevin Kelly that forecasts the twelve technological forces that will shape the next thirty years.
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="accordion">
+                            <div class="accordion-head">
+                                <span>The Innovators</span>
+                                <span class="icon">
+                                    <i class="icon fa fa-chevron-right"></i>
+                                </span>
+                            </div>
+                            <div class="accordion-body">
+                                <div class="content">
+                                    <p>
+                                        The Innovators: How a Group of Hackers, Geniuses, and Geeks Created the Digital Revolution
+                                        <br><br>
+                                        The Innovators: How a Group of Hackers, Geniuses, and Geeks Created the Digital Revolution is an overview of the history of computer science and the Digital Revolution. It was written by Walter Isaacson, and published in 2014 by Simon and Schuster.
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="contact-us">
+        <div class="container-fluid">
+            <div class="row">
+                <!-- ***** Contact Map Start ***** -->
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div id="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d118106.57842946216!2d73.10304625038417!3d22.322246411194243!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395fc8ab91a3ddab%3A0xac39d3bfe1473fb8!2sVadodara%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1591274380993!5m2!1sen!2sin" width="970" height="505" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    </div>
+                </div>
+
+
+
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="contact-form">
+                        <form id="contact" action="Contact" method="post">
+                            <div class="row">
+                                <div class="col-md-6 col-sm-12">
+                                    <fieldset>
+                                        <input name="name" type="text" id="name" placeholder="Full Name" required="" class="contact-field">
+                                    </fieldset>
+                                </div>
+                                <div class="col-md-6 col-sm-12">
+                                    <fieldset>
+                                        <input name="email" type="text" id="email" placeholder="E-mail" required="" class="contact-field">
+                                    </fieldset>
+                                </div>
+                                <div class="col-lg-12">
+                                    <fieldset>
+                                        <textarea name="message" rows="6" id="message" placeholder="Your Message" required="" class="contact-field"></textarea>
+                                    </fieldset>
+                                </div>
+                                <div class="col-lg-12">
+                                    <fieldset>
+                                        <button type="submit" id="form-submit" class="main-button">Send It</button>
+                                    </fieldset>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 col-md-12 col-sm-12">
+                    <ul class="social">
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="#"><i class="fa fa-rss"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="~/assets/js/jquery-2.1.0.min.js"></script>
+
+
+    <script src="~/assets/js/popper.js"></script>
+    <script src="~/assets/js/bootstrap.min.js"></script>
+
+
+    <script src="~/assets/js/owl-carousel.js"></script>
+    <script src="~/assets/js/scrollreveal.min.js"></script>
+    <script src="~/assets/js/waypoints.min.js"></script>
+    <script src="~/assets/js/jquery.counterup.min.js"></script>
+    <script src="~/assets/js/imgfix.min.js"></script>
+
+
+    <script src="~/assets/js/custom.js"></script>
+
+</body>
+</html>
